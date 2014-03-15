@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+		<title>erpreciso-history</title>
+	</head>
+	<body>
+		<a href="/" class="main-title">
+		start
+		</a>
+		<div class="login-area">
+			{% if edit_button %}
+			<a class="login-link" href="/_edit{{title}}">edit</a>
+			|
+			{% endif %}
+			<a class="login-link" href="/login">login</a>
+			|
+			<a class="login-link" href="/logout">logout</a>
+			|
+			<a class="login-link" href="/signup">signup</a>
+		</div>
+		<div class = "history-bars">
+			{% for h in history %}
+			<div class = "history-single">
+				<div class = "history-title">
+				{{h.wtitle}}
+				</div>
+				<div class = "history-content">
+				{{h.wcontent}}
+				</div>
+				<div class = "history-created">
+				{{h.wcreated}}
+				</div>
+				<a class = "history-view" href = "/_old/{{h.key()}}">|view</a>
+				{% if edit_button %}
+				<a class = "history-edit" href = "/_oldedit/{{h.key()}}">|edit</a>
+				{% endif %}
+				<br>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>

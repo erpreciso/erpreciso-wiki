@@ -1,0 +1,15 @@
+application: erpreciso-wiki
+version: 1b
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: erpreciso-wiki.app
+
+libraries:
+- name: jinja2
+  version: latest

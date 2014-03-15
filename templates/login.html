@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/main.css" />
+		<title>erpreciso-wiki-login</title>
+	</head>
+	<body>
+		<a href="/" class="main-title">
+		start
+		</a>
+		<div class="login-area">
+			<a class="login-link" href="/login">login</a>
+			|
+			<a class="login-link" href="/logout">logout</a>
+			|
+			<a class="login-link" href="/signup">signup</a>
+		</div>
+    <form method="post">
+		<table cellspacing=10>
+			<tr>
+				<td class="label">Username</td>
+				<td><input class = "input_text" type="text" name="username" value="{{username}}"></td>
+			</tr>
+			<tr>
+				<td class="label">Password</td>
+				<td><input class = "input_text" type="password" name="password"></td>
+			</tr>
+		</table>
+			<div class="error">{{login_error}}</div>
+			<input type="submit" class = "submit_button">
+	</form>
+	<hr>
+	</body/>
+</html>

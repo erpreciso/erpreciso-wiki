@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+		<title>erpreciso-wiki</title>
+	</head>
+	<body>
+		<a href="/" class="main-title">
+		start
+		</a>
+		<div class="login-area">
+			{% if edit_button %}
+			<a class="login-link" href="/_edit{{title}}">edit</a>
+			|
+			{% endif %}
+			<a class="login-link" href="/_history{{title}}">history</a>
+			|
+			<a class="login-link" href="/login">login</a>
+			|
+			<a class="login-link" href="/logout">logout</a>
+			|
+			<a class="login-link" href="/signup">signup</a>
+		</div>
+		<pre>{{content|safe}}</pre>
+	</body>
+</html>

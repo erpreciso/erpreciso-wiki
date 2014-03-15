@@ -1,0 +1,103 @@
+body {
+		font-family:sans-serif;
+		font-size:1em;
+		color:#000066;
+		height:100%;
+}
+
+h2 {
+		font-size:2em;
+}
+
+.label {
+		color:#000099;
+		font-size:1em
+}
+
+.error {
+		color:red;
+		font-size:1.2em;
+		font-weight:bold
+}
+
+.input_text {
+		color:black;
+		font-size:1em;
+}
+
+.submit_button {
+		color:#38383C;
+		font-size:1.2em
+}
+
+.main-title {
+    display: block;
+    color: #157A4A;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    position:absolute;
+    top:35px;
+    right:30px;
+}
+
+.edit-link {
+    display: block;
+    color: #3C5449;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    position:absolute;
+    top:55px;
+    right:30px;
+}
+
+.login-area {
+    font-size: 0.8em;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.login-link {
+    font-size:1.4em;
+    color: gray;
+    text-decoration: none;
+}
+
+textarea {
+			height:400px;
+			width:80%;
+			background:#CCF9FF;
+}
+
+.history-single {
+			display:inline;
+}
+
+.history-title {
+			display:block;
+			float:left;
+			border:10px;
+}
+
+.history-content {
+			float:left;
+}
+
+.history-created {
+			float:left;
+}
+
+.history-view {
+			float:left;
+			color:#2B3E20;
+}
+
+.history-edit {
+			float:left;
+			color:#CC0E1A;
+}

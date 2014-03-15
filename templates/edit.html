@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/static/main.css" />
+		<title>erpreciso-edit</title>
+	</head>
+	<body>
+		<div class="login-area">
+			<a class="login-link" href="/_history{{title}}">history</a>
+			|
+			<a class="login-link" href="/login">login</a>
+			|
+			<a class="login-link" href="/logout">logout</a>
+			|
+			<a class="login-link" href="/signup">signup</a>
+		</div>
+		<form method="post">
+			<textarea name='content' placeholder='Type content here' autofocus='autofocus'>{{content}}</textarea>
+			<br>
+			<input type="Submit" class="submit_button" value="Save">
+		</form>
+	</body>
+</html>
